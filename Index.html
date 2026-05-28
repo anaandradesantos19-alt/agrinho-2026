@@ -1,1 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Sustentável - Projeto Agrinho</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <header>
+        <nav>
+            <div class="logo">AgroForte 2026</div>
+            <ul>
+                <li><a href="#" onclick="showSection('simulador')">Simulador</a></li>
+                <li><a href="#" onclick="showSection('sobre-mim')">Sobre Mim</a></li>
+                <li><a href="#" onclick="showSection('agrinho')">O Concurso</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="simulador" class="active">
+            <h1>Simulador de Irrigação Inteligente</h1>
+            <p>Monitore a umidade do solo e ative os irrigadores para manter a plantação saudável.</p>
+            
+            <div class="simulador-container">
+                <div class="status-card">
+                    <div id="planta-visual" class="solo-normal">
+                        <span id="emoji-planta">🌿</span>
+                    </div>
+                    <div class="info">
+                        <h3>Umidade do Solo</h3>
+                        <div class="progress-bar">
+                            <div id="barra-umidade" style="width: 50%;"></div>
+                        </div>
+                        <p><span id="valor-umidade">50</span>%</p>
+                        <p id="feedback-texto">O solo está em condições ideais.</p>
+                    </div>
+                </div>
+
+                <div class="controles">
+                    <button id="btn-irrigar" onclick="irrigar()">Ligar Irrigadores 💧</button>
+                    <p class="dica">Dica: Não deixe a umidade baixar de 30%!</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre-mim">
+            <h1>Sobre Mim</h1>
+            <div class="perfil">
+                <p>Olá! Sou aluno do 1º ano e entusiasta da tecnologia aplicada ao campo.</p>
+                <p>Este projeto nasceu do desejo de mostrar como pequenas ações, como uma horta em casa, podem ajudar no equilíbrio do nosso planeta.</p>
+                </div>
+        </section>
+
+        <section id="agrinho">
+            <h1>Concurso Agrinho 2026</h1>
+            <h3>Tema: Agro forte futuro sustentável</h3>
+            <p>O equilíbrio entre produção e meio ambiente é o desafio da nossa geração. Através deste site, buscamos educar famílias sobre a <strong>Agricultura Urbana e Escolar</strong>.</p>
+            <div class="cards-agrinho">
+                <div class="card">Horta em Garrafa PET</div>
+                <div class="card">Compostagem Caseira</div>
+                <div class="card">Uso Consciente da Água</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Projeto Agrinho - Futuro Sustentável</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
