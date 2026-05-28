@@ -1,1 +1,130 @@
+:root {
+    --primary: #2e7d32;
+    --secondary: #81c784;
+    --accent: #2196f3;
+    --danger: #d32f2f;
+    --dry-soil: #8d6e63;
+    --wet-soil: #3e2723;
+    --bg: #f1f8e9;
+}
 
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: var(--bg);
+    color: #333;
+}
+
+header {
+    background-color: var(--primary);
+    color: white;
+    padding: 1rem 5%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 40px 5%;
+    min-height: 80vh;
+}
+
+section {
+    display: none; /* Esconde as seções por padrão */
+    animation: fadeIn 0.5s;
+}
+
+section.active {
+    display: block; /* Mostra apenas a seção ativa */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Estilo do Simulador */
+.simulador-container {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#planta-visual {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    transition: 0.5s;
+}
+
+.solo-normal { background-color: #aed581; border: 5px solid var(--primary); }
+.solo-seco { background-color: #d7ccc8; border: 5px solid var(--dry-soil); }
+
+.progress-bar {
+    background: #e0e0e0;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+#barra-umidade {
+    height: 100%;
+    background: var(--accent);
+    transition: width 0.5s ease;
+}
+
+button {
+    background-color: var(--accent);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #1976d2;
+    transform: scale(1.05);
+}
+
+.cards-agrinho {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.card {
+    background: var(--secondary);
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    color: white;
+    text-align: center;
+}
