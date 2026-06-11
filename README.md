@@ -25,8 +25,7 @@ A principal inovação tecnológica do projeto. É uma ferramenta didática que 
 * **Feedback Visual e Alertas:** A interface muda de cor (verde para solo ideal, marrom para solo seco) e os emojis mudam conforme a necessidade da planta, alertando sobre os perigos do solo muito seco ou encharcado.
 
 ### 2. 👤 Seção "Sobre Mim"
-Um espaço dedicado à apresentação do aluno desenvolvedor, destacando o ano escolar (1º Ano) e a motivação por trás da escolha do tema, humanizando o projeto e conectando o estudante à comunidade.
-
+eu me chamo Ana Carolina, tenho 15 anos, estudo na escola Estadual Coronel Costa Neto.
 ### 3. 🌾 Seção "O Concurso (Agrinho)"
 Uma página educativa que contextualiza o tema do Agrinho 2026. Ela serve como a base teórica do Guia Prático, introduzindo conceitos fundamentais de agricultura urbana, tais como:
 * Construção de hortas verticais com garrafas PET.
